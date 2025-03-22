@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quay Thưởng Pi Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quay Thưởng Pi Network</h1>
+        <p>Hãy gửi Pi theo từng lựa chọn và điền vào địa chỉ ví của bạn để tham gia quay thưởng!</p>
+
+        <div id="options">
+            <button class="option" onclick="startDraw(0.1)">0.1 Pi</button>
+            <button class="option" onclick="startDraw(1)">1 Pi</button>
+            <button class="option" onclick="startDraw(5)">5 Pi</button>
+            <button class="option" onclick="startDraw(10)">10 Pi</button>
+        </div>
+
+        <div id="form" style="display:none;">
+            <label for="wallet">Địa chỉ ví của bạn:</label>
+            <input type="text" id="wallet" placeholder="Nhập địa chỉ ví Pi Network">
+            <button onclick="submitEntry()">Gửi</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
